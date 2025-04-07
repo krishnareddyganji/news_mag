@@ -12,7 +12,7 @@ const NewsBoard = ({ category }) => {
     }, [category]);
 
     return (
-        <div>
+        <div className='itembox'>
             <h2 className="text-center">Latest <span className="badge bg-danger">News</span></h2>
             {articles.map((news, index) => {
                 return (

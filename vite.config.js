@@ -4,5 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/news_mag/', // 👈 important for GitHub Pages
+  base: '/news_mag/', // MUST match your GitHub repo name
+  build: {
+    rollupOptions: {
+      input: 'index.html',
+    },
+  },
 });
